@@ -24,8 +24,8 @@ async function bootstrap() {
      * TODO: Add more tags
      */
     const swaggerOptions = new DocumentBuilder()
-        .setTitle('NestJS Demo')
-        .setDescription('API Documentation for NestJS Demo')
+        .setTitle('work report')
+        .setDescription('API Documentation for work report')
         .setVersion('1.0.0')
         .setHost(hostDomain.split('//')[1])
         .setSchemes(AppModule.isDev ? 'http' : 'https')
@@ -52,7 +52,7 @@ async function bootstrap() {
      */
     SwaggerModule.setup('/api/docs', app, null, {
         explorer: true,
-        customSiteTitle: 'NestJS Demo API Documentation',
+        customSiteTitle: 'work report API Documentation',
         swaggerUrl: `${hostDomain}/api/docs/swagger.json`,
         swaggerOptions: {
             docExpansion: 'list',
