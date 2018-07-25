@@ -1,8 +1,8 @@
-# workreport with NestJS
+# justdo  workreport with NestJS
 
 # Server
 
-Server is written using NestJS. The following technologies are included in the demo:
+Server is written using NestJS. The following technologies are included in the project:
 1. Typescript
 2. Swagger/OpenAPI
 3. JWT/Passport
@@ -12,10 +12,6 @@ Server is written using NestJS. The following technologies are included in the d
 7. Socket.IO with `@nestjs/websockets`
 8. AutoMapper with `automapper-ts`
 
-
-# Client
-
-This is just a simple Angular frontend application to connect to the NestJS backend.
 
 # Steps to run
 1. For **Server**:
