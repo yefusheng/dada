@@ -14,15 +14,15 @@ import {
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiOperation, ApiResponse, ApiUseTags } from '@nestjs/swagger';
 import { TodoService } from './todo.service';
-import { MapperService } from '../shared/mapping/mapper.service';
+import { MapperService } from '../../shared/mapping/mapper.service';
 import { TodoVm } from './models/todo-vm.model';
 import { Todo } from './models/todo.model';
-import { ApiException } from '../shared/shared.model';
+import { ApiException } from '../../shared/shared.model';
 import { AuthGuard } from '@nestjs/passport';
 import { Request } from 'express';
-import { RolesGuard } from '../shared/guards/roles.guard';
-import { Roles } from '../shared/decorators/roles.decorator';
-import { UserRole } from '../user/models/user-role.enum';
+import { RolesGuard } from '../../shared/guards/roles.guard';
+import { Roles } from '../../shared/decorators/roles.decorator';
+import { UserRole } from '../../user/models/user-role.enum';
 import { TodoParams } from './models/todo-params.model';
 
 @Controller('todos')

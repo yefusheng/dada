@@ -1,4 +1,4 @@
-import { SharedModel } from '../../shared/shared.model';
+import { SharedModel } from '../../../shared/shared.model';
 
 export interface Todo extends SharedModel {
     content: string;

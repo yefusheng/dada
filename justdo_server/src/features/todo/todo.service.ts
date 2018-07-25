@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { SharedService } from '../shared/shared.service';
+import { SharedService } from '../../shared/shared.service';
 import { Todo } from './models/todo.model';
 import { TODO_MODEL } from './schema/todo.schema';
 import { Model } from 'mongoose';

@@ -1,5 +1,5 @@
 import { SubscribeMessage, WebSocketGateway, WebSocketServer, WsResponse } from '@nestjs/websockets';
-import { TodoService } from '../todo/todo.service';
+import { TodoService } from '../features/todo/todo.service';
 
 @WebSocketGateway()
 export class SocketGateway {

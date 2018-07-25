@@ -7,7 +7,7 @@ import { ConfigVar } from './shared/config/config.enum';
 import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
 import { AppRoutingModule } from './app-routing.module';
-import { TodoModule } from './todo/todo.module';
+import { TodoModule } from './features/todo/todo.module';
 import { SocketModule } from './socket/socket.module';
 
 @Module({

@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { RouterModule, Routes } from 'nest-router';
 import { UserModule } from './user/user.module';
-import { TodoModule } from './todo/todo.module';
+import { TodoModule } from './features/todo/todo.module';
 
 /**
  * Define API routes, there's currently a bug in nest-router package
