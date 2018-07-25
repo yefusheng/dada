@@ -2,9 +2,15 @@ import { SharedModelVm } from '../../../shared/shared.model';
 import { ApiModelProperty } from '@nestjs/swagger';
 
 export class ReportVm extends SharedModelVm {
-    @ApiModelProperty() content: string;
-
     @ApiModelProperty()
-    name: string;
+    title:string;
+    @ApiModelProperty()
+    startTime:string;
+    @ApiModelProperty()
+    endTime:string;
+    @ApiModelProperty()
+    content: any;
+    @ApiModelProperty()
+    creator: string;
 
 }

@@ -2,9 +2,13 @@ import { ApiModelProperty } from '@nestjs/swagger';
 
 export class ReportParams {
     @ApiModelProperty()
-    content: string;
+    title:string;
     @ApiModelProperty()
-    name: string;
+    startTime:string;
+    @ApiModelProperty()
+    endTime:string;
+    @ApiModelProperty()
+    content: any;
     @ApiModelProperty()
     creator: string;
 
