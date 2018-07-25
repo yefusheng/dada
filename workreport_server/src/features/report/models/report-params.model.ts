@@ -1,14 +1,10 @@
 import { ApiModelProperty } from '@nestjs/swagger';
 
-export class TodoParams {
+export class ReportParams {
     @ApiModelProperty()
     content: string;
     @ApiModelProperty()
     name: string;
-    @ApiModelProperty()
-    progress: number;
-    @ApiModelProperty()
-    todoPeoPle: string;
     @ApiModelProperty()
     creator: string;
 

@@ -5,4 +5,9 @@ export class TodoVm extends SharedModelVm {
     @ApiModelProperty() content: string;
 
     @ApiModelProperty() isCompleted: boolean;
+
+    @ApiModelProperty()
+    name: string;
+    @ApiModelProperty()
+    progress: number;
 }
