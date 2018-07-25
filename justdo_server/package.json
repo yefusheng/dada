@@ -1,7 +1,7 @@
 {
-  "name": "workreport_server",
+  "name": "justdo_server",
   "version": "1.0.0",
-  "description": "nest-js-workreport_server",
+  "description": "nest-js-server",
   "author": "yfs",
   "license": "MIT",
   "scripts": {
