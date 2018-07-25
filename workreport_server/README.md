@@ -1,4 +1,4 @@
-# NestDemo.Server
+# Server
 
 ## Description
 
