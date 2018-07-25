@@ -13,7 +13,7 @@ export const template = {
         {
             name:'事项明细',
             content:[
-                {type:'detail'}
+                {type:'text'}
             ]
         }
     ]

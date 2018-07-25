@@ -1,13 +1,12 @@
 import { SharedModel } from '../../../shared/shared.model';
+import {ApiModelProperty} from "@nestjs/swagger";
 
 export interface Todo extends SharedModel {
+    summary:string;
     content: string;
-    name:string;
     progress: number;
-    label:string;
-    isCompleted: boolean;
-    startTime:string;
-    endTime:string;
-    planStartTIme:string;
-    planEndTime:string;
+    //startTime:string;
+    //endTime:string;
+    //planStartTIme:string;
+    //planEndTime:string;
 }

@@ -2,12 +2,11 @@ import { SharedModelVm } from '../../../shared/shared.model';
 import { ApiModelProperty } from '@nestjs/swagger';
 
 export class TodoVm extends SharedModelVm {
+
+
+    @ApiModelProperty() summary: string;
+
     @ApiModelProperty() content: string;
-
-    @ApiModelProperty() isCompleted: boolean;
-
-    @ApiModelProperty()
-    name: string;
-    @ApiModelProperty()
-    progress: number;
+    S
+    @ApiModelProperty() progress: number;
 }
