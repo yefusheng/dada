@@ -36,7 +36,7 @@ export class TodoController {
 
     @Post('create')
     @HttpCode(200)
-    @Roles(UserRole.Admin)
+    @Roles(UserRole.User)
     @ApiResponse({ status: HttpStatus.OK, type: TodoVm })
     @ApiResponse({ status: HttpStatus.BAD_REQUEST, type: ApiException })
     @ApiResponse({ status: HttpStatus.INTERNAL_SERVER_ERROR, type: ApiException })
@@ -76,7 +76,7 @@ export class TodoController {
     }
 
     @Delete(':id')
-    @Roles(UserRole.Admin)
+    @Roles(UserRole.User)
     @UseGuards(RolesGuard)
     @ApiResponse({ status: HttpStatus.OK, type: TodoVm })
     @ApiResponse({ status: HttpStatus.BAD_REQUEST, type: ApiException })

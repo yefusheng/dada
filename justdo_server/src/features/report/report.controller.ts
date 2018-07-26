@@ -36,7 +36,7 @@ export class ReportController {
 
     @Post('create')
     @HttpCode(200)
-    @Roles(UserRole.Admin)
+    @Roles(UserRole.User)
     @ApiResponse({ status: HttpStatus.OK, type: ReportVm })
     @ApiResponse({ status: HttpStatus.BAD_REQUEST, type: ApiException })
     @ApiResponse({ status: HttpStatus.INTERNAL_SERVER_ERROR, type: ApiException })
@@ -76,7 +76,7 @@ export class ReportController {
     }
 
     @Delete(':id')
-    @Roles(UserRole.Admin)
+    @Roles(UserRole.User)
     @UseGuards(RolesGuard)
     @ApiResponse({ status: HttpStatus.OK, type: ReportVm })
     @ApiResponse({ status: HttpStatus.BAD_REQUEST, type: ApiException })
