@@ -24,13 +24,14 @@ async function bootstrap() {
      * TODO: Add more tags
      */
     const swaggerOptions = new DocumentBuilder()
-        .setTitle('work report')
+        .setTitle('Justdo ')
         .setDescription('API Documentation for work report')
         .setVersion('1.0.0')
         .setHost(hostDomain.split('//')[1])
         .setSchemes(AppModule.isDev ? 'http' : 'https')
         .setBasePath('/api')
         .addTag('User', 'User related API')
+        .addTag('Report', 'Report related API')
         .addTag('Todo', 'Todo related API')
         .addBearerAuth('Authorization', 'header')
         .build();

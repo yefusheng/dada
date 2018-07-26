@@ -1,4 +1,8 @@
-
+export enum contentType {
+    Todo = 'Todo' as any,
+    Text = 'Text' as any,
+    RichText = 'RichText' as any,
+}
 export const template = {
     title:'',
     startTime:'',
@@ -7,13 +11,13 @@ export const template = {
         {
             name:'工作摘要',
             content:[
-                {type:'todo'}
+                {type:contentType.Todo}
             ]
         },
         {
             name:'事项明细',
             content:[
-                {type:'text'}
+                {type:contentType.RichText}
             ]
         }
     ]
