@@ -5,6 +5,7 @@ export interface Todo extends SharedModel {
     summary:string;
     content: string;
     progress: number;
+    isCompleted:boolean;
     //startTime:string;
     //endTime:string;
     //planStartTIme:string;

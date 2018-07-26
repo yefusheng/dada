@@ -8,8 +8,7 @@ export class ReportParams {
     @ApiModelProperty()
     endTime:string;
     @ApiModelProperty()
-    content: any;
+    reportType:string;
     @ApiModelProperty()
-    creator: string;
-
+    content: Array<any>;
 }

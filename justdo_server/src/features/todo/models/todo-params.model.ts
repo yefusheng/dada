@@ -8,6 +8,7 @@ export class TodoParams {
     content: string;
     @ApiModelProperty()
     progress: number;
-
+    @ApiModelProperty()
+    isCompleted:boolean;
 
 }

@@ -9,8 +9,6 @@ export class ReportVm extends SharedModelVm {
     @ApiModelProperty()
     endTime:string;
     @ApiModelProperty()
-    content: any;
-    @ApiModelProperty()
-    creator: string;
+    content: Array<any>;
 
 }
