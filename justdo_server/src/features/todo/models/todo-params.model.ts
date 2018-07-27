@@ -1,5 +1,7 @@
 import { ApiModelProperty } from '@nestjs/swagger';
-
+/**
+ * params model
+ */
 export class TodoParams {
 
     @ApiModelProperty()

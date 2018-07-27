@@ -12,5 +12,5 @@ export class ReportVm extends SharedModelVm {
     // @ApiModelProperty()
     // content: [{type:Schema.Types.ObjectId,ref:'todo'}];
     @ApiModelProperty()
-    content:any;
+    content: Array<any>;
 }

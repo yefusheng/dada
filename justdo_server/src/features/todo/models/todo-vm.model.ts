@@ -1,6 +1,8 @@
 import { SharedModelVm } from '../../../shared/shared.model';
 import { ApiModelProperty } from '@nestjs/swagger';
-
+/**
+ * response model
+ */
 export class TodoVm extends SharedModelVm {
 
 
