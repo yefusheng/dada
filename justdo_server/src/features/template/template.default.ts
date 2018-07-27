@@ -4,21 +4,20 @@ export enum contentType {
     RichText = 'RichText' as any,
 }
 export const template = {
-    title:'',
+    name:'',
     startTime:'',
     endTime:'',
-    content:[
+    child:[
         {
             name:'工作摘要',
-            content:[
-                {type:contentType.Todo}
+            child:[
+                {name:'未完成', child: [{content:contentType.Todo}]},
+                {name:'已完成', child: [{content:contentType.Todo}]}
             ]
         },
         {
             name:'事项明细',
-            content:[
-                {type:contentType.RichText}
-            ]
+            content:contentType.RichText,
         }
     ]
 
